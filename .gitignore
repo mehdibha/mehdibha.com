@@ -5,6 +5,11 @@
 /.pnp
 .pnp.js
 
+.next
+next-env.d.ts
+tsconfig.tsbuildinfo
+.env
+
 # testing
 /coverage
 
