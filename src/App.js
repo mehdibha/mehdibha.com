@@ -12,6 +12,7 @@ import LoaderContext from "./contexts/loaderContext";
 function App() {
     const [isDarkMode, setIsDarkMode] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
+    // commit
     useEffect(() => {
         if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
             setIsDarkMode(true);
