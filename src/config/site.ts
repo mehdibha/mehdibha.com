@@ -1,20 +1,20 @@
 import { ISiteConfig } from "@/types"
 
 export const siteConfig: ISiteConfig = {
-  name: "Notionfol.io", // shown in the header
+  name: "Mehdi B.H.A.", // shown in the header
   description:
-    "Make your own portfolio + Notion-powered blog in minutes with Next.js and Vercel.",
+    "mehdibha is a web developer who builds accessible, inclusive products and digital experiences for the web.",
   links: {
     // order is same order in the footer (when link added it's shown in the footer)
     mail: "mehdibenhadjali@gmail.com",
     linkedin: "https://linkedin.com/mehdibha",
     github: "https://github.com/mehdibha",
     twitter: "https://twitter.com/mehdibha_",
-    instagram: "https://www.instagram.com/mehdibha.com",
-    codepen: "https://codepen.io/mehdi-ben-hadj-ali",
+    instagram: "https://www.instagram.com/mehdibha",
+    // codepen: "https://codepen.io/mehdi-ben-hadj-ali",
   },
   header: {
-    logo: "/images/logo.png",
+    // logo: "/images/logo.png",
     nav: [
       {
         title: "Home",
@@ -30,10 +30,10 @@ export const siteConfig: ISiteConfig = {
     title: {
       1: [
         { text: "Hey there. I'm " },
-        { text: "Notionfol.io", highlighted: true },
+        { text: "Mehdi B.H.A", highlighted: true },
         { text: "." },
       ],
-      2: [{ text: "An awesome open-source project." }],
+      2: [{ text: "A front-end developer." }],
     },
     subtitle:
       "Make your own portfolio + Notion-powered blog in minutes with Next.js and Vercel.",
