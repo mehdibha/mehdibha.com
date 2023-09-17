@@ -10,6 +10,8 @@ import { PostsList, getAllPosts } from "@/features/blog"
 import { AnimatedGradient } from "@/components"
 import { Button } from "@/components/ui"
 import Link from "next/link"
+// import { getPage } from "@/lib/notion-api"
+// import { NOTION_PAGE_ID } from "@/config"
 
 async function getData() {
   const posts = await getAllPosts({ includePages: false })
@@ -45,7 +47,10 @@ export default async function Home() {
           </Section>
         )}
       </div>
-      <div id="contact" className="flex min-h-[calc(100vh-160px)] items-center justify-center py-20">
+      <div
+        id="contact"
+        className="flex min-h-[calc(100vh-160px)] items-center justify-center py-20"
+      >
         <GetInTouch />
       </div>
     </main>

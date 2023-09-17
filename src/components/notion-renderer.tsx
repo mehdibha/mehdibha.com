@@ -92,6 +92,7 @@ type Props = {
 
 const NotionRenderer: FC<Props> = ({ recordMap }) => {
   const { theme } = useTheme()
+  
   return (
       <_NotionRenderer
         darkMode={theme === "dark"}
@@ -111,13 +112,3 @@ const NotionRenderer: FC<Props> = ({ recordMap }) => {
 }
 
 export default NotionRenderer
-
-// const StyledWrapper = styled.div`
-//   /* // TODO: why render? */
-//   .notion-collection-page-properties {
-//     display: none !important;
-//   }
-//   .notion-page {
-//     padding: 0;
-//   }
-// `

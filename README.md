@@ -1,29 +1,28 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![MIT License][license-shield]][license-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
+[![Stargazers][stars-shield]][stars-url][![Forks][forks-shield]][forks-url][![Contributors][contributors-shield]][contributors-url][![MIT License][license-shield]][license-url][![Issues][issues-shield]][issues-url]
 
-<!-- PROJECT PREVIEW -->
-<br />
-<p align="center">
+> **Warning**
+> This app is a work in progress. I'm building this in public.
 
-  <h1 align="center">Awesomefolio</h3>
-
+<br/>
+<div align="center">
+  <a href="https://github.com/Mehdi-BHA/notionfolio">
+    <img src="https://www.notionfol.io/images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+  <h1 align="center">Notionfolio</h1>
   <p align="center">
-    An awesome, modern React portfolio
-    <br />
-    <br />
-    <a href="https://mehdibha.codehub.tn">View Demo</a>
-    ·
-    <a href="https://github.com/Mehdi-BHA/Awesomefolio/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/Mehdi-BHA/Awesomefolio/issues">Request Feature</a>
+    Make your own portfolio + Notion-powered blog in minutes with Next.js and Vercel.
   </p>
-</p>
+  <p>
+    
+   <a href="https://www.notionfol.io">View Demo</a>
+    ·
+    <a href="https://github.com/Mehdi-BHA/notionfolio/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Mehdi-BHA/notionfolio/issues">Request Feature</a>
+  </p>
+</div>
 
-<!-- TABLE OF CONTENTS -->
-<details open="open">
+<details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
@@ -47,101 +46,83 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
-First version of <a href="https://mehdibha.codehub.tn" target="_blank">mehdibha.codehub.tn</a>
+This repo is what I use to power my personal blog and portfolio site [mehdibha.com](https://www.mehdibha.com).
 
-### Forking this project
-If someone wants to use this code on his own website, the answer is **YES** BUT please with credits !
-I've spent a non-trivial amount of effort building and designing this iteration of my website, and I am proud of it!
+<details open><summary>Screenshot</summary>
+<img src="https://www.notionfol.io/images/screenshots/screenshot01.png" />
+</details>
 
-### Screenshots
+## Features
 
-<p align="center">
-  <p align="center">Light Mode</p>
-  <img src="screenshots/light.png" alt="Home section">
-</p>
-<p align="center">
-  <p align="center">Home Section</p>
-  <img src="screenshots/home.png" alt="Home section">
-</p>
-<br />
-<p align="center">
-  <p align="center">About Section</p>
-  <img src="screenshots/about.png" alt="About section">
-</p>
-<br />
-<p align="center">
-  <p align="center">Experience Section</p>
-  <img src="screenshots/experience.png" alt="Experience section">
-</p>
-<br />
-<p align="center">
-  <p align="center">Projects Section</p>
-  <img src="screenshots/projects.png" alt="Projects section">
-</p>
-<br />
-<p align="center">
-  <p align="center">Contact Section</p>
-  <img src="screenshots/contact.png" alt="Contact section">
-</p>
+- 📒 Writing posts using notion
+- 👀 SEO friendly
+- 🤖 Entirely customisable throw one config file
 
-### Built With
-
-* [React JS](https://reactjs.org/)
-* [Material UI](https://material-ui.com/)
-* [Framer Motion](https://www.framer.com/motion/)
-
-<!-- GETTING STARTED -->
 ## Getting Started
 
-If you want to clone the project and make you personal portfolio
+If you want to clone the project and make you personal notionfolio
 
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/Mehdi-BHA/notionfolio.git
    ```
 2. Install NPM packages
    ```sh
-   npm install
+   yarn
    ```
 
+### Configuration
+
+-
+
+## Roadmap
+
+- [ ] Organize project architecture
+- [ ] Latest posts component (home page)
+- [ ] Footer
+- [ ] Blog page design
+- [ ] Refactor blog page to use pagination
+- [ ] NotionRenderrer component
+- [ ] Post page
+- [ ]
+
+## Sites using notionfol.io
+
+We will be happy to mention you here, just make a pull request and we will add you
+
+- [notionfol.io](https://www.notionfol.io)
+- [mehdibha.com](https://www.mehdibha.com)
+
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+See the [contribution guide](contributing.md) and join our amazing list of [contributors](https://github.com/transitive-bullshit/nextjs-notion-starter-kit/graphs/contributors)!
 
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
+## Contributors
 
-<!-- CONTACT -->
-## Contact
+<table><tr align="left">
+  <td align="center"><a href="https://github.com/mehdi-bha"><img src="https://avatars.githubusercontent.com/u/12223900?v=4" width="64px;"alt="Mehdi BHA"/><br/><sub><b>Mehdi BHA</b></sub></a></td>
+</tr></table>
 
-Mehdi Ben Hadj Ali - [linkedIn](https://www.linkedin.com/in/mehdibha/) - mehdibenhadjali@gmail.com
-
-Project Link: [https://github.com/Mehdi-BHA/Awesomefolio](https://github.com/Mehdi-BHA/Awesomefolio)
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Mehdi-BHA/Awesomefolio.svg?style=for-the-badge
-[contributors-url]: https://github.com/Mehdi-BHA/Awesomefolio/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Mehdi-BHA/Awesomefolio.svg?style=for-the-badge
-[forks-url]: https://github.com/Mehdi-BHA/Awesomefolio.svg/network/members
-[stars-shield]: https://img.shields.io/github/stars/Mehdi-BHA/Awesomefolio.svg?style=for-the-badge
-[stars-url]: https://github.com/Mehdi-BHA/Awesomefolio.svg/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Mehdi-BHA/Awesomefolio.svg?style=for-the-badge
-[issues-url]: https://github.com/Mehdi-BHA/Awesomefolio.svg/issues
-[license-shield]: https://img.shields.io/github/license/Mehdi-BHA/Awesomefolio.svg?style=for-the-badge
-[license-url]: https://github.com/Mehdi-BHA/Awesomefolio.svg/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Mehdi-BHA/notionfolio.svg?style=for-the-badge
+[contributors-url]: https://github.com/Mehdi-BHA/notionfolio/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Mehdi-BHA/notionfolio.svg?style=for-the-badge
+[forks-url]: https://github.com/Mehdi-BHA/notionfolio.svg/network/members
+[stars-shield]: https://img.shields.io/github/stars/Mehdi-BHA/notionfolio.svg?style=for-the-badge
+[stars-url]: https://github.com/Mehdi-BHA/notionfolio.svg/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Mehdi-BHA/notionfolio.svg?style=for-the-badge
+[issues-url]: https://github.com/Mehdi-BHA/notionfolio.svg/issues
+[license-shield]: https://img.shields.io/github/license/Mehdi-BHA/notionfolio.svg?style=for-the-badge
+[license-url]: https://github.com/Mehdi-BHA/notionfolio.svg/blob/master/LICENSE.txt
