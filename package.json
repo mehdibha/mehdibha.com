@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "update-template":"bash ./scripts/update_template.sh",
     "types:check": "tsc --noEmit"
   },
   "dependencies": {
