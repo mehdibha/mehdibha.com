@@ -7,3 +7,4 @@ git fetch template
 git merge -s recursive -X theirs template/main --allow-unrelated-histories --no-commit
 git reset ./public ./src/config/site.config.ts
 git commit -m "Update template"
+git checkout -- .
