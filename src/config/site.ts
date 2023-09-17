@@ -3,7 +3,7 @@ import { ISiteConfig } from "@/types"
 export const siteConfig: ISiteConfig = {
   name: "Mehdi B.H.A.", // shown in the header
   description:
-    "mehdibha is a web developer who builds accessible, inclusive products and digital experiences for the web.",
+    "Mehdi BHA is a web developer elevating digital experiences with front-end expertise, making performant and elegant web solutions.",
   links: {
     // order is same order in the footer (when link added it's shown in the footer)
     mail: "mehdibenhadjali@gmail.com",
@@ -29,14 +29,14 @@ export const siteConfig: ISiteConfig = {
   heroBanner: {
     title: {
       1: [
-        { text: "Hey there. I'm " },
+        { text: "Hello. I'm " },
         { text: "Mehdi B.H.A", highlighted: true },
         { text: "." },
       ],
       2: [{ text: "A front-end developer." }],
     },
     subtitle:
-      "Make your own portfolio + Notion-powered blog in minutes with Next.js and Vercel.",
+      "Elevating Digital Experiences with Front-End Expertise: Your Front-End Developer for performant and elegant Web Solutions.",
     callToActions: [
       {
         label: "Read the blog",
@@ -50,41 +50,36 @@ export const siteConfig: ISiteConfig = {
   },
   about: {
     avatar: "/images/avatar.png",
-    title: "I'm a passionate full-stack developer working from Sousse,Tunisia.",
+    title: "I'm a passionate web developer working from Sousse,Tunisia.",
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi est sit amet facilisis magna etiam. Rutrum quisque non tellus orci ac auctor augue.",
-      "Posuere morbi leo urna molestie. Adipiscing enim eu turpis egestas pretium aenean pharetra magna ac. Est velit egestas dui id ornare arcu odio ut sem. Faucibus in ornare quam viverra orci. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc.",
-      "Montes nascetur ridiculus mus mauris vitae. Sagittis aliquam malesuada bibendum arcu vitae elementum. Elit pellentesque habitant morbi tristique. Elementum facilisis leo vel fringilla. Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. Euismod nisi porta lorem mollis aliquam ut porttitor leo. Elementum nibh tellus molestie nunc non blandit massa enim nec",
+      "Hello! I'm Mehdi, a seasoned web developer with a strong passion for front-end development. My coding journey began in 2012 when I created a bot for the game Dofus and crafted websites as a young enthusiast.",
+      "In 2019, I co-founded Code Hub, a developer-focused coworking space, and ventured into freelancing on various projects. I later joined Pengguin, a startup dedicated to simplifying language learning, where I've been applying my expertise to make the web more accessible.",
+      "Outside of my professional work, I'm a dedicated open-source contributor, spending my nights coding for the community. Now a full-time freelancer, I'm committed to delivering top-notch front-end solutions.",
+      "Let's connect and explore the endless possibilities of front-end web development together. Feel free to reach out for collaborations or to discuss the latest in the tech world.",
     ],
   },
   experience: [
     {
-      title: "Software Engineer",
-      company: "Tech Solutions Inc.",
-      link: "https://www.codehub.tn",
-      location: "United States",
-      startDate: "Jan 2019",
+      title: "Freelancer",
+      company: "Upwork",
+      link: "https://www.upwork.com/freelancers/~01bf255619b222c4d2",
+      location: "Remote",
+      startDate: "Sep 2023",
       endDate: "Present",
       description:
-        "Developed and maintained web applications using modern technologies. Collaborated with cross-functional teams to deliver high-quality software solutions.",
-      tags: [
-        "Software Development",
-        "Web Applications",
-        "Modern Technologies",
-        "Cross-Functional Teams",
-        "High-Quality Software",
-        "Collaboration",
-      ],
+        "Developed and maintained web applications using modern technologies.",
+      tags: ["Reactjs", "Nextjs"],
     },
     {
-      title: "Product Manager",
-      company: "InnovateTech",
-      link: "https://www.codehub.tn",
-      location: "United States",
+      title: "Front-end lead",
+      company: "pengguin",
+      link: "https://www.pengguin.com",
+      location: "Delaware, United States (remote)",
       startDate: "Jun 2017",
       endDate: "Dec 2018",
       description:
         "Led product development initiatives, defined product roadmaps, and coordinated with engineering and design teams to launch successful products.",
+        
       tags: [
         "Product Development",
         "Product Roadmaps",
@@ -96,8 +91,8 @@ export const siteConfig: ISiteConfig = {
       ],
     },
     {
-      title: "Marketing Specialist",
-      company: "Digital Marketing Agency",
+      title: "Full-stack developer",
+      company: "Code Hub",
       link: "https://www.codehub.tn",
       location: "United States",
       startDate: "Mar 2015",
@@ -110,24 +105,6 @@ export const siteConfig: ISiteConfig = {
         "Performance Metrics",
         "Strategy Optimization",
         "ROI Analysis",
-      ],
-    },
-    {
-      title: "Intern",
-      company: "ABC Corporation",
-      link: "https://www.codehub.tn",
-      location: "United States",
-      startDate: "Jun 2014",
-      endDate: "Aug 2014",
-      description:
-        "Assisted in various departments, gaining exposure to marketing, sales, and project management.",
-      tags: [
-        "Internship",
-        "Exposure",
-        "Marketing",
-        "Sales",
-        "Project Management",
-        "Assisting",
       ],
     },
   ],
@@ -164,7 +141,7 @@ export const siteConfig: ISiteConfig = {
       links: {
         website: "https://www.codehub.tn",
         github: "https://www.github.com/Mehdi-BHA/notionfolio",
-        npm: "https://www.npmjs.com/package/react-wave-player"
+        npm: "https://www.npmjs.com/package/react-wave-player",
       },
     },
     {
@@ -181,7 +158,7 @@ export const siteConfig: ISiteConfig = {
       links: {
         website: "https://www.codehub.tn",
         github: "https://www.github.com/Mehdi-BHA/notionfolio",
-        npm: "https://www.npmjs.com/package/react-wave-player"
+        npm: "https://www.npmjs.com/package/react-wave-player",
       },
     },
     {
@@ -198,7 +175,7 @@ export const siteConfig: ISiteConfig = {
       links: {
         website: "https://www.codehub.tn",
         github: "https://www.github.com/Mehdi-BHA/notionfolio",
-        npm: "https://www.npmjs.com/package/react-wave-player"
+        npm: "https://www.npmjs.com/package/react-wave-player",
       },
     },
   ],
