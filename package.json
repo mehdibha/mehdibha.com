@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "update-template":"bash ./scripts/update_template.sh",
-    "types:check": "tsc --noEmit"
+    "types:check": "tsc --noEmit",
+    "update-template":"bash ./scripts/update_template.sh"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.4",
