@@ -64,10 +64,11 @@ export const siteConfig: ISiteConfig = {
       company: "Upwork",
       link: "https://www.upwork.com/freelancers/~01bf255619b222c4d2",
       location: "Remote",
-      startDate: "Sep 2023",
+      startDate: "Sept 2023",
       endDate: "Present",
-      description:
-        "Developed and maintained web applications using modern technologies.",
+      description: [
+        "Led product development initiatives, defined product roadmaps, and coordinated with engineering and design teams to launch successful products.",
+      ],
       tags: ["Reactjs", "Nextjs"],
     },
     {
@@ -77,9 +78,17 @@ export const siteConfig: ISiteConfig = {
       location: "Delaware, United States (remote)",
       startDate: "Jun 2017",
       endDate: "Dec 2018",
-      description:
+      description: [
         "Led product development initiatives, defined product roadmaps, and coordinated with engineering and design teams to launch successful products.",
-        
+        "Led the development of a web-based language learning platform similar to Google Meet, managing a team of 3 developers.",
+        "Developed the platform from scratch using React, Next.js, and Redux, and integrated key features such as whiteboard and video call capabilities.",
+        "Implemented a script to generate code based on the OpenAPI specification file to generate services and hooks ready to use in the react project to speed up developement.",
+        "Implemented a design system using Storybook to ensure consistent and high-quality UI across the platform.",
+        "Created a Zoom plugin that utilized AI to analyze grammar errors during meetings, providing feedback to users and helping to improve language skills.",
+        "Demonstrated strong leadership skills, guiding the team through the development process and ensuring project deadlines were met",
+        "Strengthened my expertise in front-end development and project management while contributing to the development of an innovative language learning platform",
+      ],
+
       tags: [
         "Product Development",
         "Product Roadmaps",
@@ -97,8 +106,14 @@ export const siteConfig: ISiteConfig = {
       location: "United States",
       startDate: "Mar 2015",
       endDate: "May 2017",
-      description:
-        "Executed digital marketing campaigns, analyzed performance metrics, and optimized strategies to increase client ROI.",
+      description: [
+        "Founded and managed Code Hub, a coworking space for developers in Sousse. As a freelance React developer, worked with various clients on diverse projects. Implemented custom React solutions for clients, delivering high-quality and performant code.",
+        "Collaborated with clients to define project requirements and ensure their needs were met.",
+        "Led initiatives to foster a strong community of developers at Code Hub, organizing events and workshops to share knowledge and build relationships.",
+        "Managed the day-to-day operations of the coworking space, overseeing facilities management, customer service, and marketing efforts.",
+        "Demonstrated strong entrepreneurial and managerial skills, establishing Code Hub as a go-to destination for developers in Sousse and building a loyal customer base.",
+        "Strengthened my expertise in React development and business management while leading Code Hub to success as a thriving coworking space.",
+      ],
       tags: [
         "Digital Marketing",
         "Campaigns",
