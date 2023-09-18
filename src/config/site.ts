@@ -67,7 +67,7 @@ export const siteConfig: ISiteConfig = {
       startDate: "Sept 2023",
       endDate: "Present",
       description: [
-        "Led product development initiatives, defined product roadmaps, and coordinated with engineering and design teams to launch successful products.",
+        "Working",
       ],
       tags: ["Reactjs", "Nextjs"],
     },
@@ -125,25 +125,25 @@ export const siteConfig: ISiteConfig = {
   ],
   education: [
     {
-      school: "MIT",
-      link: "https://www.mit.edu",
+      school: "Esprit",
+      link: "https://www.esprit.tn",
       degree: "Engineer's degree",
       fieldOfStudy: "web development",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+      // description:
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
       startDate: "2015",
       endDate: "2020",
     },
-    {
-      school: "FreeCodeCamp",
-      link: "https://www.freecodecamp.org",
-      degree: "Certification",
-      startDate: "2015",
-    },
+    // {
+    //   school: "FreeCodeCamp",
+    //   link: "https://www.freecodecamp.org",
+    //   degree: "Certification",
+    //   startDate: "2015",
+    // },
   ],
   projects: [
     {
-      title: "Spotify Connected App",
+      title: "Notionfol.io",
       image: "/images/projects/project01.webp",
       summary:
         "Build a Spotify Connected App Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.",
