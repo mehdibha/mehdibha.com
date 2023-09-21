@@ -66,9 +66,7 @@ export const siteConfig: ISiteConfig = {
       location: "Remote",
       startDate: "Sept 2023",
       endDate: "Present",
-      description: [
-        "Working",
-      ],
+      description: ["Working"],
       tags: ["Reactjs", "Nextjs"],
     },
     {
@@ -129,17 +127,9 @@ export const siteConfig: ISiteConfig = {
       link: "https://www.esprit.tn",
       degree: "Engineer's degree",
       fieldOfStudy: "web development",
-      // description:
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
       startDate: "2015",
       endDate: "2020",
     },
-    // {
-    //   school: "FreeCodeCamp",
-    //   link: "https://www.freecodecamp.org",
-    //   degree: "Certification",
-    //   startDate: "2015",
-    // },
   ],
   projects: [
     {
@@ -158,48 +148,16 @@ export const siteConfig: ISiteConfig = {
         github: "https://www.github.com/Mehdi-BHA/notionfolio",
         npm: "https://www.npmjs.com/package/react-wave-player",
       },
-    },
-    {
-      title: "Weather Forecast App",
-      image: "/images/projects/project02.png",
-      summary:
-        "Create a weather forecast web application that allows users to check the weather for different locations. The project will involve using APIs, front-end technologies like React, and integrating with a weather data provider.",
-      tags: ["React", "API Integration", "Weather"],
-      description: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi est sit amet facilisis magna etiam. Rutrum quisque non tellus orci ac auctor augue.",
-        "Posuere morbi leo urna molestie. Adipiscing enim eu turpis egestas pretium aenean pharetra magna ac. Est velit egestas dui id ornare arcu odio ut sem. Faucibus in ornare quam viverra orci. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc.",
-        "Montes nascetur ridiculus mus mauris vitae. Sagittis aliquam malesuada bibendum arcu vitae elementum. Elit pellentesque habitant morbi tristique. Elementum facilisis leo vel fringilla. Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. Euismod nisi porta lorem mollis aliquam ut porttitor leo. Elementum nibh tellus molestie nunc non blandit massa enim nec",
-      ],
-      links: {
-        website: "https://www.codehub.tn",
-        github: "https://www.github.com/Mehdi-BHA/notionfolio",
-        npm: "https://www.npmjs.com/package/react-wave-player",
-      },
-    },
-    {
-      title: "E-commerce Website",
-      image: "/images/projects/project03.png",
-      summary:
-        "Develop a fully functional e-commerce website where users can browse products, add them to a cart, and make purchases. Technologies used will include React for the front end, Node.js for the back end, and MongoDB for the database.",
-      tags: ["React", "Node.js", "E-commerce"],
-      description: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi est sit amet facilisis magna etiam. Rutrum quisque non tellus orci ac auctor augue.",
-        "Posuere morbi leo urna molestie. Adipiscing enim eu turpis egestas pretium aenean pharetra magna ac. Est velit egestas dui id ornare arcu odio ut sem. Faucibus in ornare quam viverra orci. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc.",
-        "Montes nascetur ridiculus mus mauris vitae. Sagittis aliquam malesuada bibendum arcu vitae elementum. Elit pellentesque habitant morbi tristique. Elementum facilisis leo vel fringilla. Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. Euismod nisi porta lorem mollis aliquam ut porttitor leo. Elementum nibh tellus molestie nunc non blandit massa enim nec",
-      ],
-      links: {
-        website: "https://www.codehub.tn",
-        github: "https://www.github.com/Mehdi-BHA/notionfolio",
-        npm: "https://www.npmjs.com/package/react-wave-player",
-      },
+      featured: true,
     },
   ],
   contact: {
     title: "Get in touch",
-    description: "Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+    description:
+      "Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
     callToAction: {
-      label : "Say hello",
-      href: "emailto:mehdibenhadjali@gmail.com"
-    }
-  }
+      label: "Say hello",
+      href: "emailto:mehdibenhadjali@gmail.com",
+    },
+  },
 }
