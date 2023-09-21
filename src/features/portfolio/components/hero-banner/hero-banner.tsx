@@ -1,15 +1,18 @@
+"use client"
 import React from "react"
-import { Button } from "@/components/ui"
 import Link from "next/link"
+import { Button } from "@/components/ui"
 import { siteConfig } from "@/config"
+import { MouseScrollAnimation } from "./mouse-scroll-animation"
 
 const data = siteConfig.heroBanner
 
 export const HeroBanner = () => {
+  
   return (
-    <div className=" flex min-h-[calc(100vh-64px)] items-center justify-center">
+    <div className="relative flex min-h-[calc(100vh-64px)] items-center justify-center p-4">
       <div className="pb-28">
-        <h1 className="mb-2 text-center font-display text-7xl">
+        <h1 className="mb-2 text-center font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
           {Object.keys(data.title).map((sectionKey) => (
             <span key={sectionKey}>
               {data.title[sectionKey].map((item, index) => (
@@ -24,16 +27,26 @@ export const HeroBanner = () => {
             </span>
           ))}
         </h1>
-        <h2 className="mb-8 text-center text-xl">{data.subtitle}</h2>
-        <div className="ali flex justify-center space-x-4">
+        <h2 className="mb-8 text-center text-lg font-medium md:text-xl">
+          {data.subtitle}
+        </h2>
+        <div className="flex justify-center space-x-2 sm:space-x-4">
           {data.callToActions.map((elem, index) => (
-            <Link key={index} href={elem.href}>
-              <Button size="lg" variant={index === 0 ? "default" : "neutral"}>
+            <Button
+              key={index}
+              asChild
+              size="lg"
+              variant={index === 0 ? "default" : "neutral"}
+            >
+              <Link href={elem.href} scroll={true} >
                 {elem.label}
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           ))}
         </div>
+      </div>
+      <div className="absolute bottom-5 left-1/2 translate-x-[-50%]">
+        <MouseScrollAnimation />
       </div>
     </div>
   )
