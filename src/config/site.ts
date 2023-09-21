@@ -6,7 +6,7 @@ export const siteConfig: ISiteConfig = {
     "Mehdi BHA is a web developer elevating digital experiences with front-end expertise, making performant and elegant web solutions.",
   links: {
     // order is same order in the footer (when link added it's shown in the footer)
-    mail: "mehdibenhadjali@gmail.com",
+    mail: "hello@mehdi.co",
     linkedin: "https://linkedin.com/mehdibha",
     github: "https://github.com/mehdibha",
     twitter: "https://twitter.com/mehdibha_",
@@ -157,7 +157,7 @@ export const siteConfig: ISiteConfig = {
       "Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
     callToAction: {
       label: "Say hello",
-      href: "emailto:mehdibenhadjali@gmail.com",
+      href: "emailto:hello@mehdibha.co",
     },
   },
 }
