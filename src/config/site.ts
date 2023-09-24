@@ -14,7 +14,7 @@ export const siteConfig: ISiteConfig = {
     // codepen: "https://codepen.io/mehdi-ben-hadj-ali",
   },
   header: {
-    // logo: "/images/logo.png",
+    logo: "/images/logo.png",
     nav: [
       {
         title: "Home",
@@ -23,6 +23,14 @@ export const siteConfig: ISiteConfig = {
       {
         title: "Blog",
         href: "/blog",
+      },
+      {
+        title: "Courses",
+        href: "/courses",
+      },
+      {
+        title: "Tools",
+        href: "/tools",
       },
     ],
   },
@@ -35,8 +43,7 @@ export const siteConfig: ISiteConfig = {
       ],
       2: [{ text: "A front-end developer." }],
     },
-    subtitle:
-      "Elevating Digital Experiences with Front-End Expertise: Your Front-End Developer for performant and elegant Web Solutions.",
+    subtitle: "Elevating digital experiences with react expertise.",
     callToActions: [
       {
         label: "Read the blog",
@@ -66,7 +73,9 @@ export const siteConfig: ISiteConfig = {
       location: "Remote",
       startDate: "Sept 2023",
       endDate: "Present",
-      description: ["Working"],
+      description: [
+        "As a Freelancer on Upwork, I've been actively working on projects involving React.js and Next.js. My current role involves working remotely, and I have been contributing to various projects, enhancing my skills and delivering top-notch results",
+      ],
       tags: ["Reactjs", "Nextjs"],
     },
     {
@@ -74,8 +83,8 @@ export const siteConfig: ISiteConfig = {
       company: "pengguin",
       link: "https://www.pengguin.com",
       location: "Delaware, United States (remote)",
-      startDate: "Jun 2017",
-      endDate: "Dec 2018",
+      startDate: "Mar 2022",
+      endDate: "Aug 2023",
       description: [
         "Led product development initiatives, defined product roadmaps, and coordinated with engineering and design teams to launch successful products.",
         "Led the development of a web-based language learning platform similar to Google Meet, managing a team of 3 developers.",
@@ -98,12 +107,12 @@ export const siteConfig: ISiteConfig = {
       ],
     },
     {
-      title: "Full-stack developer",
+      title: "Founder & full-stack developer",
       company: "Code Hub",
       link: "https://www.codehub.tn",
-      location: "United States",
-      startDate: "Mar 2015",
-      endDate: "May 2017",
+      location: "Sousse, Tunisia",
+      startDate: "Jan 2021",
+      endDate: "Feb 2022",
       description: [
         "Founded and managed Code Hub, a coworking space for developers in Sousse. As a freelance React developer, worked with various clients on diverse projects. Implemented custom React solutions for clients, delivering high-quality and performant code.",
         "Collaborated with clients to define project requirements and ensure their needs were met.",
@@ -134,19 +143,19 @@ export const siteConfig: ISiteConfig = {
   projects: [
     {
       title: "Notionfol.io",
-      image: "/images/projects/project01.webp",
+      image: "/images/projects/notionfolio.png",
       summary:
-        "Build a Spotify Connected App Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.",
+        "Notionfol.io is a versatile platform that empowers users to create their personalized portfolios and blogs seamlessly using Next.js and Vercel. It leverages the power of Notion as a content management system, offering features such as SEO-friendly URLs, responsive design, and incremental static regeneration.",
       tags: ["React"],
       description: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi est sit amet facilisis magna etiam. Rutrum quisque non tellus orci ac auctor augue.",
-        "Posuere morbi leo urna molestie. Adipiscing enim eu turpis egestas pretium aenean pharetra magna ac. Est velit egestas dui id ornare arcu odio ut sem. Faucibus in ornare quam viverra orci. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc.",
-        "Montes nascetur ridiculus mus mauris vitae. Sagittis aliquam malesuada bibendum arcu vitae elementum. Elit pellentesque habitant morbi tristique. Elementum facilisis leo vel fringilla. Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. Euismod nisi porta lorem mollis aliquam ut porttitor leo. Elementum nibh tellus molestie nunc non blandit massa enim nec",
+        "This repo is what I use to power my personal blog and portfolio website.",
+        "It's perfect for building your own personal website if you are a developer, a designer, a researcher, a writer with almost everything customizable.",
+        "Features include writing posts using Notion as CMS, pretty URLs, SEO-friendly, entirely customizable through one config file, fast page views, sleek portfolio showcase, dark and light mode, responsive design, incremental static regeneration, RSS feed, deploy on Vercel in minutes, search posts instantly, analytics with Vercel Analytics, and the ability to display your courses.",
       ],
       links: {
-        website: "https://www.codehub.tn",
-        github: "https://www.github.com/Mehdi-BHA/notionfolio",
-        npm: "https://www.npmjs.com/package/react-wave-player",
+        website: "https://www.notionfol.io",
+        github: "https://www.github.com/mehdibha/notionfolio",
+        // npm: "https://www.npmjs.com/package/react-wave-player",
       },
       featured: true,
     },
@@ -154,10 +163,49 @@ export const siteConfig: ISiteConfig = {
   contact: {
     title: "Get in touch",
     description:
-      "Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+      "Ready to elevate your React projects? Let's collaborate! Drop me a line, and let's discuss turning your ideas into stunning web experiences.",
     callToAction: {
       label: "Say hello",
       href: "emailto:hello@mehdibha.co",
     },
   },
+  courses: [
+    {
+      title: "React.dev",
+      description:
+        "Learn React with the offical react docs. They remade their website in march.",
+      image: "/images/courses/react.png",
+      price: "FREE",
+      tags: ["docs"],
+      link: "https://react.dev/learn",
+    },
+    {
+      title: "React handbook",
+      description:
+        "Modern approaches to architecture and feature development in React apps.",
+      image: "/images/courses/react.png",
+      price: "FREE",
+      tags: ["Advanced"],
+      link: "https://reacthandbook.dev/",
+    },
+    {
+      title: "Epic React",
+      description:
+        "Confidently Ship Well-Architected Production Ready React Apps Like a Pro",
+      image: "/images/courses/epic-react.png",
+      price: "$179",
+      tags: ["Intermediate", "Advanced", "5 chapters"],
+      link: "https://epicreact.dev/",
+    },
+  ],
+  tools: [
+    {
+      title: "Color hunt",
+      description:
+        "Discover the newest hand-picked color palettes of Color Hunt. Get color inspiration for your design and art projects.",
+      image: "/images/tools/color-hunt.png",
+      tags: ["Color palette", "Design"],
+      link: "https://colorhunt.co/",
+    },
+  ],
 }

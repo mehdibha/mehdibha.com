@@ -43,8 +43,8 @@ export const ProjectModal = (props: ProjectModalProps) => {
           <p className="text-muted-foreground text-sm">{summary}</p>
           <Image
             src={image}
-            width={350}
-            height={100}
+            width={900}
+            height={600}
             alt={title}
             objectFit="contain"
             className="mx-auto my-6"
