@@ -1,19 +1,18 @@
 import React, { Suspense } from "react"
-import Link from "next/link"
 import Image from "next/image"
+import Link from "next/link"
 import { siteConfig } from "@/config"
 import { cn } from "@/utils"
+import { Background } from "./background"
+import { MobileNav } from "./mobile-nav"
 import { Nav } from "./nav"
 import { ThemeToggle } from "./theme-toggle"
-import { MobileNav } from "./mobile-nav"
-import { Background } from "./background"
 
 const logo = siteConfig.header.logo
 const name = siteConfig.name
 const nav = siteConfig.header.nav
 
 export const Header = () => {
-
   return (
     <header className={cn("sticky top-0 z-40 w-full")}>
       <div className="relative">

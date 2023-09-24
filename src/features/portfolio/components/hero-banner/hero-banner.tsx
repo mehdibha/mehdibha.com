@@ -1,18 +1,18 @@
 "use client"
+
 import React from "react"
 import Link from "next/link"
-import { Button } from "@/components/ui"
 import { siteConfig } from "@/config"
+import { Button } from "@/components/ui"
 import { MouseScrollAnimation } from "./mouse-scroll-animation"
 
 const data = siteConfig.heroBanner
 
 export const HeroBanner = () => {
-  
   return (
     <div className="relative flex min-h-[calc(100vh-64px)] items-center justify-center p-4">
       <div className="pb-28">
-        <h1 className="mb-2 text-center font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+        <h1 className="font-display mb-2 text-center text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
           {Object.keys(data.title).map((sectionKey) => (
             <span key={sectionKey}>
               {data.title[sectionKey].map((item, index) => (
@@ -38,7 +38,7 @@ export const HeroBanner = () => {
               size="lg"
               variant={index === 0 ? "default" : "neutral"}
             >
-              <Link href={elem.href} scroll={true} >
+              <Link href={elem.href} scroll={true}>
                 {elem.label}
               </Link>
             </Button>

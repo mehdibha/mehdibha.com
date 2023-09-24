@@ -1,9 +1,10 @@
-import { idToUuid } from "notion-utils"
-import { api } from "./notion-api"
-import { getAllPageIds } from "./get-all-page-ids"
-import { getPageProperties } from "./get-page-properties"
 import { NOTION_PAGE_ID } from "@/config"
 import { TPosts } from "@/types"
+import { idToUuid } from "notion-utils"
+import { getAllPageIds } from "./get-all-page-ids"
+import { getPageProperties } from "./get-page-properties"
+import { mapImgUrl } from "./map-image"
+import { api } from "./notion-api"
 
 export async function getAllPosts({ includePages = false }) {
   const id = idToUuid(NOTION_PAGE_ID)
@@ -35,8 +36,9 @@ export async function getAllPosts({ includePages = false }) {
       // // Convert date (with timezone) to unix milliseconds timestamp
       properties.createdTime = new Date(
         block[id].value?.created_time
-      ).toISOString();
-      
+      ).toISOString()
+      properties.thumbnail =
+        mapImgUrl(block[id].value?.format?.page_cover, block[id].value) ?? ""
 
       data.push(properties)
     }
@@ -47,7 +49,7 @@ export async function getAllPosts({ includePages = false }) {
       const dateB: any = new Date(b?.date?.start_date || b.createdTime)
       return dateB - dateA
     })
-    
+
     const posts = data as TPosts
     return posts
   }

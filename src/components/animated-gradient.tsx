@@ -1,4 +1,5 @@
 "use client"
+
 import { Variants, motion } from "framer-motion"
 
 export const AnimatedGradient = () => (
@@ -11,7 +12,7 @@ export const AnimatedGradient = () => (
         width: "100%",
         height: "600px",
         filter: "blur(60px)",
-        willChange:"filter"
+        willChange: "filter",
       }}
     >
       <div

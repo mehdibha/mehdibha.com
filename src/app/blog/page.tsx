@@ -1,9 +1,10 @@
 import React from "react"
-import { getAllTags } from "@/features/blog"
+import { PostsExplorer, getAllTags } from "@/features/blog"
+import { generateRssFeed } from "@/utils/rss"
 import { getAllPosts } from "@/lib/notion"
-import PostsExplorer from "@/features/blog/components/posts-explorer"
 
 async function getData() {
+  await generateRssFeed()
   const posts = await getAllPosts({ includePages: false })
   let tags: string[] = []
   if (posts) {

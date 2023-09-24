@@ -1,4 +1,6 @@
 import React from "react"
+import Image from "next/image"
+import { Github, Link, Npm } from "@/assets/icons"
 import {
   Badge,
   Button,
@@ -7,8 +9,6 @@ import {
   DialogFooter,
   DialogTrigger,
 } from "@/components/ui"
-import Image from "next/image"
-import { Link, Github, Npm } from "@/assets/icons"
 
 interface ILinks {
   website?: string
@@ -40,7 +40,7 @@ export const ProjectModal = (props: ProjectModalProps) => {
       <DialogContent className="max-w-2xl p-0">
         <div className="max-h-[80vh] overflow-y-scroll p-6">
           <h2 className="mb-2 text-xl font-semibold">{title}</h2>
-          <p className="text-sm text-muted-foreground">{summary}</p>
+          <p className="text-muted-foreground text-sm">{summary}</p>
           <Image
             src={image}
             width={350}

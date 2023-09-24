@@ -74,6 +74,25 @@ export interface IContact {
   }
 }
 
+export interface ICourse {
+  title: string
+  description: string
+  image: string
+  rate: number
+  numberReviews: string
+  price: string
+  tags: string[]
+  link: string
+}
+
+export interface ITool {
+  title: string
+  description: string
+  image: string
+  tags: string[]
+  link: string
+}
+
 export interface ISiteConfig {
   name: string
   description: string
@@ -84,5 +103,7 @@ export interface ISiteConfig {
   experience: IWorkExperience[]
   education: IEducation[]
   projects: IProject[]
+  courses: ICourse[]
   contact: IContact
+  tools: ITool[]
 }

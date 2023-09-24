@@ -1,9 +1,10 @@
 "use client"
+
 import React from "react"
-import { Button } from "@/components/ui"
-import { siteConfig } from "@/config"
-import { ProjectsList } from "./projects-list"
 import Link from "next/link"
+import { siteConfig } from "@/config"
+import { Button } from "@/components/ui"
+import { ProjectsList } from "./projects-list"
 
 export const Projects = () => {
   const projectsData = siteConfig.projects

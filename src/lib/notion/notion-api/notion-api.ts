@@ -1,4 +1,5 @@
 import * as notion from "notion-types"
+import axios from "axios"
 import {
   getBlockCollectionId,
   getPageContentBlockIds,
@@ -7,7 +8,6 @@ import {
 } from "notion-utils"
 import pMap from "p-map"
 import * as types from "./types"
-import axios from "axios"
 
 /**
  * Main Notion API client.

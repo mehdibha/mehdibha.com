@@ -1,22 +1,22 @@
 "use client"
+
 import React from "react"
-import { Badge } from "@/components/ui"
 import { cn } from "@/utils"
+import { Badge } from "@/components/ui"
 
 interface TagsSelectProps {
   tags: string[]
-  selectedTags : string[]
-  handleTagClick : (tag: string) => void
+  selectedTags: string[]
+  handleTagClick: (tag: string) => void
 }
 
 export const TagsSelect = (props: TagsSelectProps) => {
-  const { tags,selectedTags, handleTagClick } = props
+  const { tags, selectedTags, handleTagClick } = props
 
   return (
     <div className="mb-10 flex flex-wrap gap-4">
       {tags.map((tag) => {
-        const selected =
-          selectedTags.findIndex((elem) => elem === tag) > -1
+        const selected = selectedTags.findIndex((elem) => elem === tag) > -1
         const onClick = () => {
           handleTagClick(tag)
         }

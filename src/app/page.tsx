@@ -1,14 +1,14 @@
 import Link from "next/link"
+import { AnimatedGradient } from "@/components"
+import { PostsList, getAllPosts } from "@/features/blog"
 import {
   About,
   Education,
   GetInTouch,
   HeroBanner,
-  WorkExperience,
   Projects,
+  WorkExperience,
 } from "@/features/portfolio"
-import { PostsList, getAllPosts } from "@/features/blog"
-import { AnimatedGradient } from "@/components"
 import { Button } from "@/components/ui"
 
 async function getData() {
@@ -65,7 +65,7 @@ const Section = (props: SectionProps) => {
   const { title, id, children } = props
   return (
     <div id={id} className="mx-auto w-full max-w-4xl">
-      <h2 className="mb-4 font-display text-4xl font-bold">{title}</h2>
+      <h2 className="font-display mb-4 text-4xl font-bold">{title}</h2>
       {children}
     </div>
   )

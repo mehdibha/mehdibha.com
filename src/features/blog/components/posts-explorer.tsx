@@ -1,21 +1,27 @@
 "use client"
+
 import React from "react"
-import { TPost, TPosts } from "@/types"
-import { SearchBar } from "./search-bar"
-import { TagsSelect } from "./tags-select"
-import { PostsList } from "./posts-list"
 import { useSearchParams } from "next/navigation"
 import { useUpdateQueryStringValueWithoutNavigation } from "@/hooks"
+import { TPost, TPosts } from "@/types"
+import { useInView } from "framer-motion"
+import { PostsList } from "./posts-list"
+import { SearchBar } from "./search-bar"
+import { TagsSelect } from "./tags-select"
 
 interface PostsExplorerProps {
   posts: TPosts
   tags: string[]
 }
 
-const PostsExplorer = (props: PostsExplorerProps) => {
+export const PostsExplorer = (props: PostsExplorerProps) => {
   const { posts, tags } = props
 
   const searchParams = useSearchParams()
+  const loadMoreRef = React.useRef<HTMLDivElement | null>(null)
+  const inView = useInView(loadMoreRef)
+  const [numberDisplayedPosts, setNumberDisplayedPosts] =
+    React.useState<number>(30)
 
   const initialSearchValue = searchParams.get("q") ?? ""
   const initialTags =
@@ -54,6 +60,12 @@ const PostsExplorer = (props: PostsExplorerProps) => {
     })
   }, [posts, searchValue, selectedTags])
 
+  React.useEffect(() => {
+    if (inView) {
+      setNumberDisplayedPosts((prevN) => prevN + 20)
+    }
+  }, [inView])
+
   return (
     <div>
       <div className="container mb-10 max-w-3xl">
@@ -69,10 +81,11 @@ const PostsExplorer = (props: PostsExplorerProps) => {
           selectedTags={selectedTags}
           handleTagClick={handleTagClick}
         />
-        {filteredPosts && <PostsList posts={filteredPosts} />}
+        {filteredPosts && (
+          <PostsList posts={filteredPosts.slice(0, numberDisplayedPosts)} />
+        )}
+        <div ref={loadMoreRef} />
       </div>
     </div>
   )
 }
-
-export default PostsExplorer

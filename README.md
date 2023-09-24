@@ -42,6 +42,7 @@
 ## About The Project
 
 This repo is what I use to power my personal blog and portfolio site [mehdibha.co](https://www.mehdibha.co).
+It's perfect for building your own personal website if you are a developer, a designer, a researcher, a writer with almost everything customizable.
 
 <details open><summary>Screenshot</summary>
 <img src="https://www.notionfol.io/images/screenshots/screenshot01.png" />
@@ -53,12 +54,15 @@ This repo is what I use to power my personal blog and portfolio site [mehdibha.c
 - 👀 Pretty URLs & SEO friendly
 - 🤖 Entirely customisable through one config file
 - 🚀 Fast page views
+- 💼 Sleek Portfolio -> Showcase your work elegantly and professionally.
 - 🌓 Dark and light mode
-- 📱 Responsive
+- 📱 Responsive design
 - ♻️ Incremental static regeneration (Every x minutes re-update website content so no need to redeploy)
+- 📰 RSS feed
 - 🚀 Deploy on Vercel in minutes
-- 🔍 Search
-- 📰 RSS feed (coming soon)
+- 🔍 Search posts instantly
+- 📈 Analytics with vercel analytics
+- Dispaly your courses
   
 
 ### Built with
@@ -86,24 +90,23 @@ If you want to clone the project and make you personal notionfolio
 ## Roadmap
 
 - [x] Make the website responsive
-- [x] Fix display date in posts
 - [x] Projects archive page
-- [ ] Missing cover image in blog posts
-- [ ] Infinite scroll in blog page
+- [x] Generate a sitemap and robots.txt
+- [x] Implement RSS feed
+- [x] Add thumbnails to posts
+- [x] Implement analytics
+- [x] Infinite scroll in blog page
+- [x] CI / pre-commit hooks
+- [x] Introduce courses feature
+- [x] Introduce tools feature
+- [ ] Automatically generate a resume on build
 - [ ] Make config more optionnal (config/site.ts)
-- [ ] Switch from react-notion-x to a custom component
-- [ ] CI / pre-commit hooks
-- [ ] Fix all linting and type errors
-- [ ] Generate a sitemap
-- [ ] Implement RSS feed
-- [ ] Implement analytics
-- [ ] Auth + comments
 - [ ] Collect emails to continue reading an article
-- [ ] Introduce courses feature
-- [ ] Introduce tools feature
-- [ ] Automatically generate a resume on build (using LaTeX and maybe with different variants)
+- [ ] Improve SEO and lighthouse score
+- [ ] Auth + comments
 - [ ] PWA
-- [ ] Add themes and variants for components
+- [ ] Switch from react-notion-x to a custom component
+- [ ] Add templates and variants for components
 - [ ] implement i18n
 - [ ] Make a website to generate notionfolios from it directly
 
@@ -119,7 +122,7 @@ We will be happy to mention you here, just make a pull request and we will add y
 
 ## Contributing
 
-See the [contribution guide](contributing.md) and join our amazing list of [contributors](https://github.com/mehdibha/notionfolio/graphs/contributors)!
+See the [contribution guide](CONTRIBUTING.md) and join our amazing list of [contributors](https://github.com/mehdibha/notionfolio/graphs/contributors)!
 
 <!-- LICENSE -->
 

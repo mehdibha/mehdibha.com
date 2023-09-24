@@ -1,6 +1,7 @@
 "use client"
-import { getFirstStringsLessThanNChars } from "@/utils"
+
 import React from "react"
+import { getFirstStringsLessThanNChars } from "@/utils"
 
 interface WorkExperienceDescriptionProps {
   list: string[]
