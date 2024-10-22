@@ -1,9 +1,9 @@
 import { Link } from "@/components/core/link";
 import { Item } from "@/components/fade-in";
+import { Footer } from "@/components/footer";
 import { List } from "@/components/list";
 import { writing, lab } from "@/app/source";
 import { projects } from "@/content/projects";
-import { Footer } from "@/components/footer";
 
 export default function Home() {
   const allPosts = writing.getPages();
