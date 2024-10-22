@@ -23,7 +23,6 @@ export const lab = defineCollections({
 });
 
 export default defineConfig({
-  lastModifiedTime: "git",
   mdxOptions: {
     rehypeCodeOptions: {
       inline: "tailing-curly-colon",

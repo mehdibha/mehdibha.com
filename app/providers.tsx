@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { ThemeProvider } from "next-themes";
+import { ViewTransitions } from "next-view-transitions";
 import { RouterProvider } from "react-aria-components";
 
 declare module "react-aria-components" {
@@ -15,15 +16,17 @@ declare module "react-aria-components" {
 export function Providers({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   return (
-    <RouterProvider navigate={router.push}>
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
-      >
-        {children}
-      </ThemeProvider>
-    </RouterProvider>
+    <ViewTransitions>
+      <RouterProvider navigate={router.push}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </RouterProvider>
+    </ViewTransitions>
   );
 }

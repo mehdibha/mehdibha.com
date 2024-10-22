@@ -229,3 +229,12 @@
     @apply bg-bg text-fg;
   }
 }
+
+@layer components {
+  .shiki code span {
+    color: var(--shiki-light);
+  }
+  .dark .shiki code span {
+    color: var(--shiki-dark);
+  }
+}

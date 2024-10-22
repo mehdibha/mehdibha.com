@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { Link } from "next-view-transitions";
 import { cn } from "@/lib/cn";
-import { ItemLink } from "./fade-in";
+import { Item } from "./fade-in";
 
 export const List = ({
   items,
@@ -14,34 +15,38 @@ export const List = ({
   return (
     <div className="text-sm">
       {items.map((item, index) => (
-        <ItemLink
+        <Item
           key={index}
-          href={item.href}
           onHoverStart={() => {
             setHoveredIndex(index);
           }}
           onHoverEnd={() => setHoveredIndex(null)}
-          target={item.href.startsWith("http") ? "_blank" : undefined}
         >
-          <div
-            className={cn(
-              "flex items-center justify-between border-b py-3 duration-200",
-              hoveredIndex !== null && hoveredIndex !== index
-                ? "!opacity-50"
-                : ""
-            )}
+          <Link
+            href={item.href}
+            target={item.href.startsWith("http") ? "_blank" : undefined}
+            className="w-full"
           >
-            <div className="flex flex-col">
-              <span>{item.title}</span>
-              {item.description && (
-                <span className="text-fg-muted">{item.description}</span>
+            <div
+              className={cn(
+                "flex items-center justify-between border-b py-3 duration-200",
+                hoveredIndex !== null && hoveredIndex !== index
+                  ? "!opacity-50"
+                  : ""
+              )}
+            >
+              <div className="flex flex-col">
+                <span>{item.title}</span>
+                {item.description && (
+                  <span className="text-fg-muted">{item.description}</span>
+                )}
+              </div>
+              {item.hint && (
+                <span className="text-right text-fg-muted">{item.hint}</span>
               )}
             </div>
-            {item.hint && (
-              <span className="text-right text-fg-muted">{item.hint}</span>
-            )}
-          </div>
-        </ItemLink>
+          </Link>
+        </Item>
       ))}
     </div>
   );

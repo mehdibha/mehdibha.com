@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { motion, HTMLMotionProps } from "framer-motion";
 
 const container = {
@@ -31,7 +30,6 @@ const item = {
       mass: 1.2,
     },
   },
-  
 };
 
 function Container(props: HTMLMotionProps<"div">) {
@@ -53,9 +51,4 @@ function Item({
   return <motion.div variants={item} {...props} />;
 }
 
-const MotionLink = motion.create(Link);
-function ItemLink(props: HTMLMotionProps<"a">) {
-  return <MotionLink variants={item} {...props} />;
-}
-
-export { Container, Item, ItemLink };
+export { Container, Item };

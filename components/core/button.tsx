@@ -19,21 +19,21 @@ const buttonStyles = tv(
     variants: {
       variant: {
         default:
-          "pressed:bg-bg-neutral-active bg-bg-neutral text-fg-onNeutral hover:bg-bg-neutral-hover",
+          "bg-bg-neutral text-fg-onNeutral hover:bg-bg-neutral-hover pressed:bg-bg-neutral-active",
         primary:
-          "pressed:bg-bg-primary-active bg-bg-primary text-fg-onPrimary hover:bg-bg-primary-hover",
+          "bg-bg-primary text-fg-onPrimary hover:bg-bg-primary-hover pressed:bg-bg-primary-active",
         quiet:
-          "pressed:bg-bg-inverse/20 bg-transparent text-fg hover:bg-bg-inverse/10",
+          "bg-transparent text-fg hover:bg-bg-inverse/10 pressed:bg-bg-inverse/20",
         outline:
-          "pressed:bg-bg-inverse/15 border border-border-field bg-bg-inverse/5 text-fg hover:bg-bg-inverse/10 disabled:border-border-disabled disabled:bg-transparent",
+          "border border-border-field bg-bg-inverse/5 text-fg hover:bg-bg-inverse/10 pressed:bg-bg-inverse/15 disabled:border-border-disabled disabled:bg-transparent",
         accent:
-          "pressed:bg-bg-accent-active bg-bg-accent text-fg-onAccent hover:bg-bg-accent-hover",
+          "bg-bg-accent text-fg-onAccent hover:bg-bg-accent-hover pressed:bg-bg-accent-active",
         success:
-          "pressed:bg-bg-success-active bg-bg-success text-fg-onSuccess hover:bg-bg-success-hover",
+          "bg-bg-success text-fg-onSuccess hover:bg-bg-success-hover pressed:bg-bg-success-active",
         warning:
-          "pressed:bg-bg-warning-active bg-bg-warning text-fg-onWarning hover:bg-bg-warning-hover",
+          "bg-bg-warning text-fg-onWarning hover:bg-bg-warning-hover pressed:bg-bg-warning-active",
         danger:
-          "pressed:bg-bg-danger-active bg-bg-danger text-fg-onDanger hover:bg-bg-danger-hover",
+          "bg-bg-danger text-fg-onDanger hover:bg-bg-danger-hover pressed:bg-bg-danger-active",
       },
       size: {
         sm: "h-8 px-3 [&_svg]:size-4",

@@ -21,7 +21,6 @@ var lab = defineCollections({
   type: "doc"
 });
 var source_config_default = defineConfig({
-  lastModifiedTime: "git",
   mdxOptions: {
     rehypeCodeOptions: {
       inline: "tailing-curly-colon",

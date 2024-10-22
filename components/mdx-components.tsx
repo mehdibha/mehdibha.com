@@ -2,37 +2,27 @@ import React from "react";
 import NavLink from "next/link";
 import { MDXComponents } from "mdx/types";
 import { cn } from "@/lib/cn";
+import { Pre } from "./code-block";
 import { ComponentPreview, ComponentPreviewProps } from "./component-preview";
 
-// import { Alert, AlertProps } from "@/registry/ui/default/core/alert";
-// import { cn } from "@/registry/ui/default/lib/cn";
-// import { Pre } from "./code-block";
-// import {
-//   ComponentPreview,
-//   type ComponentPreviewProps,
-// } from "./component-preview";
-// import { ComponentSource } from "./component-source";
-// import { InstallTab, InstallTabs } from "./install-tabs";
-// import { Tabs, Tab, type TabsProps } from "./tabs";
-
 export const mdxComponents: MDXComponents = {
-  h1: createHeading(1, "font-heading mt-2 scroll-m-20 text-4xl font-bold"),
+  h1: createHeading(1, "font-heading mt-2 scroll-m-20 text-2xl font-bold"),
   h2: createHeading(
     2,
-    "font-heading mt-12 scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight first:mt-0"
+    "font-heading mt-8 scroll-m-20 pb-1 text-xl font-semibold tracking-tight first:mt-0"
   ),
   h3: createHeading(
     3,
-    "font-heading mt-8 scroll-m-20 text-xl font-semibold tracking-tight"
+    "font-heading mt-4 scroll-m-20 text-xl font-semibold tracking-tight"
   ),
   h4: createHeading(
     4,
-    "font-heading mt-8 scroll-m-20 text-lg font-semibold tracking-tight"
+    "font-heading mt-6 scroll-m-20 text-lg font-semibold tracking-tight"
   ),
-  h5: createHeading(5, "mt-8 scroll-m-20 text-lg font-semibold tracking-tight"),
+  h5: createHeading(5, "mt-6 scroll-m-20 text-lg font-semibold tracking-tight"),
   h6: createHeading(
     6,
-    "mt-8 scroll-m-20 text-base font-semibold tracking-tight"
+    "mt-6 scroll-m-20 text-base font-semibold tracking-tight"
   ),
   a: Link,
   p: ({ className, ...props }) => (
@@ -45,10 +35,10 @@ export const mdxComponents: MDXComponents = {
     />
   ),
   ul: ({ className, ...props }) => (
-    <ul className={cn("my-6 ml-6 list-disc", className)} {...props} />
+    <ul className={cn("my-4 ml-6 list-disc", className)} {...props} />
   ),
   ol: ({ className, ...props }) => (
-    <ol className={cn("my-6 ml-6 list-decimal", className)} {...props} />
+    <ol className={cn("my-4 ml-6 list-decimal", className)} {...props} />
   ),
   li: ({ className, ...props }) => (
     <li className={cn("mt-2", className)} {...props} />
@@ -62,13 +52,6 @@ export const mdxComponents: MDXComponents = {
       {...props}
     />
   ),
-  // img: ({ className, alt, ...props }) => (
-  //   <img
-  //     className={cn("mx-auto max-w-md rounded-md border", className)}
-  //     alt={alt}
-  //     {...props}
-  //   />
-  // ),
   hr: ({ ...props }) => <hr className="my-4 md:my-8" {...props} />,
   table: ({ className, ...props }) => (
     <div className="my-6 w-full overflow-y-auto rounded-md">
@@ -101,20 +84,8 @@ export const mdxComponents: MDXComponents = {
       <div className="flex flex-wrap items-center gap-2">{children}</div>
     </td>
   ),
-  // add mt-4 to all pre except when it has a parent with class install-tabs
-  // pre: ({ className, ...props }: React.HTMLAttributes<HTMLPreElement>) => (
-  //   <Pre className={cn("[&:not(:first-child)]:mt-4", className)} {...props} />
-  // ),
-  code: ({ className, ...props }) => (
-    <code
-      className={cn(
-        "relative rounded bg-bg-muted px-[0.3rem] py-[0.2rem] font-mono text-xs",
-        className
-      )}
-      {...props}
-    >
-      {props.children}
-    </code>
+  pre: ({ className, ...props }: React.HTMLAttributes<HTMLPreElement>) => (
+    <Pre className={cn("[&:not(:first-child)]:mt-4", className)} {...props} />
   ),
   ComponentPreview: ({ className, ...props }: ComponentPreviewProps) => (
     <ComponentPreview className={cn("mt-6", className)} {...props} />
