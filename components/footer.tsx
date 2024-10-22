@@ -3,7 +3,7 @@ import { Link } from "@/components/core/link";
 
 export const Footer = () => {
   return (
-    <div className="mx-auto mt-20 max-w-screen-sm px-4">
+    <div className="mt-20">
       <div className="flex flex-col gap-2 border-t py-6 text-sm text-fg-muted">
         <div className="flex items-center gap-3 text-sm text-fg-muted">
           <div>Find me on:</div>

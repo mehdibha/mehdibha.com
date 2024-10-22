@@ -3,7 +3,6 @@ import "@vercel/analytics";
 import { Analytics } from "@vercel/analytics/next";
 import { siteConfig } from "@/config/site-config";
 import { truncateOnWord } from "@/lib/string";
-import { Footer } from "@/components/footer";
 import "./globals.css";
 import { Providers } from "./providers";
 
@@ -43,7 +42,6 @@ export default function RootLayout({
         <Providers>
           <Analytics />
           {children}
-          <Footer />
         </Providers>
       </body>
     </html>

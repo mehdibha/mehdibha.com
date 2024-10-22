@@ -44,10 +44,8 @@ function Container(props: HTMLMotionProps<"div">) {
 }
 
 function Item({
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  as = "div",
   ...props
-}: { as?: string } & HTMLMotionProps<"div">) {
+}: { disableAnimation?: boolean } & HTMLMotionProps<"div">) {
   return <motion.div variants={item} {...props} />;
 }
 

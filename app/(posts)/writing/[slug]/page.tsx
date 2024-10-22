@@ -2,6 +2,7 @@ import { type Metadata } from "next";
 import { notFound } from "next/navigation";
 import { siteConfig } from "@/config/site-config";
 import { truncateOnWord } from "@/lib/string";
+import { Footer } from "@/components/footer";
 import { mdxComponents } from "@/components/mdx-components";
 import { TableOfContents } from "@/components/toc";
 import { writing } from "@/app/source";
@@ -32,6 +33,7 @@ export default async function WritingPage({ params }: PageProps) {
         <div className="mt-10">
           <MDXContent components={mdxComponents} />
         </div>
+        <Footer />
       </div>
       <div className="hidden xl:block">
         {post.data.toc && post.data.toc.length > 0 && (

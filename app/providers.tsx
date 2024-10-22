@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { ThemeProvider } from "next-themes";
 import { ViewTransitions } from "next-view-transitions";
 import { RouterProvider } from "react-aria-components";
+import { Container } from "@/components/fade-in";
 
 declare module "react-aria-components" {
   interface RouterConfig {
@@ -24,7 +25,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <Container>{children}</Container>
         </ThemeProvider>
       </RouterProvider>
     </ViewTransitions>
