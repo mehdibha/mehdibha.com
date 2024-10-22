@@ -2,6 +2,7 @@ import React from "react";
 import NavLink from "next/link";
 import { MDXComponents } from "mdx/types";
 import { cn } from "@/lib/cn";
+import { ComponentPreview, ComponentPreviewProps } from "./component-preview";
 
 // import { Alert, AlertProps } from "@/registry/ui/default/core/alert";
 // import { cn } from "@/registry/ui/default/lib/cn";
@@ -114,6 +115,9 @@ export const mdxComponents: MDXComponents = {
     >
       {props.children}
     </code>
+  ),
+  ComponentPreview: ({ className, ...props }: ComponentPreviewProps) => (
+    <ComponentPreview className={cn("mt-6", className)} {...props} />
   ),
 };
 

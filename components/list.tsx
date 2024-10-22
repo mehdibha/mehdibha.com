@@ -10,7 +10,6 @@ export const List = ({
   items: { title: string; description?: string; hint?: string; href: string }[];
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  console.log(hoveredIndex);
 
   return (
     <div className="text-sm">
@@ -18,23 +17,30 @@ export const List = ({
         <ItemLink
           key={index}
           href={item.href}
-          className={cn(
-            "flex items-center justify-between border-b py-3",
-            hoveredIndex !== null && hoveredIndex !== index ? "!opacity-50" : ""
-          )}
           onHoverStart={() => {
             setHoveredIndex(index);
           }}
           onHoverEnd={() => setHoveredIndex(null)}
           target={item.href.startsWith("http") ? "_blank" : undefined}
         >
-          <div className="flex flex-col">
-            <span>{item.title}</span>
-            {item.description && (
-              <span className="text-fg-muted">{item.description}</span>
+          <div
+            className={cn(
+              "flex items-center justify-between border-b py-3 duration-200",
+              hoveredIndex !== null && hoveredIndex !== index
+                ? "!opacity-50"
+                : ""
+            )}
+          >
+            <div className="flex flex-col">
+              <span>{item.title}</span>
+              {item.description && (
+                <span className="text-fg-muted">{item.description}</span>
+              )}
+            </div>
+            {item.hint && (
+              <span className="text-right text-fg-muted">{item.hint}</span>
             )}
           </div>
-          {item.hint && <span className="text-fg-muted text-right">{item.hint}</span>}
         </ItemLink>
       ))}
     </div>
