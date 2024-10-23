@@ -1,3 +1,4 @@
+import { formatDate } from "@/lib/date";
 import { Link } from "@/components/core/link";
 import { Item } from "@/components/fade-in";
 import { Footer } from "@/components/footer";
@@ -40,6 +41,7 @@ export default function Home() {
             items={allLabs.map((lab) => ({
               title: lab.data.title,
               href: lab.url,
+              hint: lab.data.date ? formatDate(lab.data.date) : undefined,
             }))}
           />
         </>
@@ -53,6 +55,7 @@ export default function Home() {
             items={allPosts.map((post) => ({
               title: post.data.title,
               href: post.url,
+              hint: post.data.date ? formatDate(post.data.date) : undefined,
             }))}
           />
         </>

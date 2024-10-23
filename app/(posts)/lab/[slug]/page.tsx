@@ -1,6 +1,7 @@
 import { type Metadata } from "next";
 import { notFound } from "next/navigation";
 import { siteConfig } from "@/config/site-config";
+import { formatDate } from "@/lib/date";
 import { truncateOnWord } from "@/lib/string";
 import { Footer } from "@/components/footer";
 import { mdxComponents } from "@/components/mdx-components";
@@ -27,7 +28,7 @@ export default async function LabPage({ params }: PageProps) {
         <h1 className="mt-10 text-xl font-bold">{post.data.title}</h1>
         {post.data.date && (
           <p className="text-sm text-fg-muted">
-            Published on {new Date(post.data.date).toDateString()}
+            Published on {formatDate(post.data.date)}
           </p>
         )}
         <div className="mt-10">

@@ -1,22 +1,21 @@
 "use client";
 
-import { motion, HTMLMotionProps } from "framer-motion";
+import { motion, HTMLMotionProps, type Variants } from "framer-motion";
 
-const container = {
+const container: Variants = {
   hidden: {},
   show: {
     transition: {
-      staggerChildren: 0.05,
-      delayChildren: 0.1,
+      staggerChildren: 0.1,
     },
   },
 };
 
-const item = {
+const item: Variants = {
   hidden: {
     opacity: 0,
     y: 16,
-    filter: "blur(4px)",
+    filter: "blur(10px)",
   },
   show: {
     opacity: 1,

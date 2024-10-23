@@ -19,7 +19,7 @@ export default function AnimatedTabs() {
         {(tab) => (
           <Tab
             id={tab.id}
-            className="text-md relative cursor-pointer touch-none px-3 py-1.5 outline-none transition"
+            className="text-md relative cursor-pointer touch-none px-3 py-1.5 text-sm outline-none transition"
           >
             {({ isSelected, isFocusVisible }) => (
               <>
