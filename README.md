@@ -4,11 +4,10 @@ My personal website
 
 ## Stack
 
-- Next.js
-- dotUI
-- Content Collections
-- MDX
-- Tailwind CSS
+- [Next.js](https://nextjs.org)
+- [dotUI](https://dotui.org)
+- [Fumadocs](https://fumadocs.vercel.app)
+- [Tailwind CSS](https://tailwindcss.com)
 
 ## License
 
