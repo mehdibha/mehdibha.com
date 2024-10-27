@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <div>
-      <Item>
+      <Item translateAnimation={false}>
         <h1 className="text-lg font-semibold">Mehdi Ben Hadj Ali</h1>
       </Item>
       <Item>

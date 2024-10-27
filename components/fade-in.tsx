@@ -11,10 +11,10 @@ const container: Variants = {
   },
 };
 
-const item: Variants = {
+const item = (y: boolean): Variants => ({
   hidden: {
     opacity: 0,
-    y: 16,
+    y: y ? 16 : 0,
     filter: "blur(10px)",
   },
   show: {
@@ -29,7 +29,7 @@ const item: Variants = {
       mass: 1.2,
     },
   },
-};
+});
 
 function Container(props: HTMLMotionProps<"div">) {
   return (
@@ -43,9 +43,10 @@ function Container(props: HTMLMotionProps<"div">) {
 }
 
 function Item({
+  translateAnimation = true,
   ...props
-}: { disableAnimation?: boolean } & HTMLMotionProps<"div">) {
-  return <motion.div variants={item} {...props} />;
+}: { translateAnimation?: boolean } & HTMLMotionProps<"div">) {
+  return <motion.div variants={item(translateAnimation)} {...props} />;
 }
 
 export { Container, Item };
