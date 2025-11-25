@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div>
       <Item translateAnimation={false}>
-        <h1 className="text-lg font-semibold">Mehdi Ben Hadj Ali</h1>
+        <h1 className="text-lg font-semibold">Mehdi BHA</h1>
       </Item>
       <Item>
         <p className="text-fg-muted">Design Engineer</p>
